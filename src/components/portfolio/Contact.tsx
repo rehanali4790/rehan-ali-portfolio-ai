@@ -95,10 +95,19 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" ref={sectionRef} className="relative py-24 sm:py-32">
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-3xl" />
+    <section id="contact" ref={sectionRef} className="relative py-24 sm:py-32 overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 -top-20 -bottom-20 z-0">
+        <img
+          src="/images/contact-bg.png"
+          alt=""
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#030712] via-[#030712]/90 to-[#030712]" />
+      </div>
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-emerald-500/5 rounded-full blur-3xl z-0" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="contact-heading mb-16 text-center">
           <p className="text-emerald-400 text-sm font-mono tracking-wider uppercase mb-3">
             {'// '}Get In Touch
