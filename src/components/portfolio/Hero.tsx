@@ -175,7 +175,7 @@ export default function Hero() {
               {/* Image container */}
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-gray-950">
                 <img
-                  src="/images/hero-profile.png"
+                  src="/images/hero-profile.jpg"
                   alt="Rehan Ali - AI/ML Engineer"
                   className="w-full h-full object-cover"
                 />

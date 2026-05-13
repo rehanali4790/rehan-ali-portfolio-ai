@@ -52,3 +52,9 @@ prompt
 server.log
 # Skills directory
 /skills/
+
+# local Prisma SQLite (set DATABASE_URL in each environment)
+prisma/dev.db
+
+# duplicate source photo (served copy lives in public/images/)
+WhatsApp*.jpeg
