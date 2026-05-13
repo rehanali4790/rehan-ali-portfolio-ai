@@ -32,6 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -55,6 +56,3 @@ server.log
 
 # local Prisma SQLite (set DATABASE_URL in each environment)
 prisma/dev.db
-
-# duplicate source photo (served copy lives in public/images/)
-WhatsApp*.jpeg
